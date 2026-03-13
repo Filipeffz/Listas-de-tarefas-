@@ -1,6 +1,5 @@
 import sqlite3
 
-# conecta ou cria o banco
 conexao = sqlite3.connect("tarefas.db")
 cursor = conexao.cursor()
 
@@ -95,4 +94,5 @@ def menu():
 
 criar_tabela()
 menu()
+
 conexao.close()
